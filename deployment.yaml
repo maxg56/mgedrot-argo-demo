@@ -1,8 +1,10 @@
-apiVersion: apps/v2 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: myapp
   namespace: dev
+  labels:
+    app: wil
 spec:
   replicas: 1
   selector:
